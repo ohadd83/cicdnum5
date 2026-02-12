@@ -26,7 +26,7 @@ pipeline {
                 sh '''
                     docker stop simple-app || true
                     docker rm simple-app || true
-                    docker run -d -p 8081:3000 --name simple-app simple-app:latest
+                    docker run -d -p 8083:3000 --name simple-app simple-app:latest
                 '''
             }
         }
